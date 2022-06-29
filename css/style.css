@@ -1,0 +1,116 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+.header{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #0065ff;
+  border-bottom: 5px solid #ff9a00;
+}
+
+.header h1{
+  font-family: "Audiowide", sans-serif;
+  margin-bottom: 1em;
+  padding-top: 1em;
+}
+
+.header h3{
+  background-color: #000000;
+  width: auto;
+  display: inline;
+}
+
+.menuBar{
+  margin-top: 1em;
+  font-size: 2em;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  background-color: #ff5d00;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+}
+
+.menuBar li{
+  display: inline-flex;
+}
+
+.menuBar li a{
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.content{
+  background-color: #00a2ff;
+  width: 100%;
+  height:auto;
+  display: inline-flex;
+}
+
+.notFound{
+  font-size: 2em;
+}
+
+.fieldset{
+  overflow: hidden;
+  border-radius: 25px;
+  float: left;
+  margin: 2.5em;
+  background-color: white;
+  min-width: 600px;
+  min-height: 500px;
+}
+
+.fieldset ul{
+  font-size: 1.5em;
+}
+
+.fieldset h2{
+  color: #FFF;
+  background-color: #000;
+  font-size: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#text{
+  padding: 1em;
+  font-size: 1.5em;
+}
+#includedContent h1 {
+  color: #fff;
+  background-color: #000;
+  font-size: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#includedContent h2 {
+  color: #fff;
+  background-color: #000;
+  font-size: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.fieldset p{
+  padding-left: 1.5em;
+}
+
+.footer{
+  color:#fff;
+  background-color: #393939;
+  min-height: 50px;
+  padding: 2em;
+}
