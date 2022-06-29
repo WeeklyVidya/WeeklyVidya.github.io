@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weekly Vidya</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Kanit">
+    <script>
+      function kek(url){
+        //alert(url);
+        //$("#includedContent").hide();
+        $("#includedContent").load(url);
+      }
+      function hideC(){
+        $("#includedContent").hide();
+        $("#recentArticles").show();
+      }
+      function hideR(){
+        $("#includedContent").show();
+        $("#recentArticles").hide();
+      }
+    </script>
+    <script>
+      function setPage(){
+        var url_string =  window.location.href; //window.location.href
+        var url = new URL(url_string);
+        var c = url.searchParams.get("ar");
+        console.log(c);
+        if(c == null){
+          hideC();
+        }
+        else {
+          hideR();
+          kek(c);
+        }
+      }
+    </script>
+  </head>
+  <body onload="setPage()">
+    <div class="header">
+      <h1>Weekly Vidya</h1>
+      <h2>Opinioni impopolari ogni settimana!</h2>
+      <h3>~Ma chi ve l'ha chiesto?</h3>
+      <ul class="menuBar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Articoli</a></li>
+        <li><a href="#">Info</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="fieldset" id="recentArticles">
+        <h2>> Articoli recenti_</h2>
+          <p class="notFound">
+            <ul class="inc" style="padding:2em;">
+              <!--<li><a href="articles/06-29-22-Un_nuovo_inizio/06-29-22-Un_nuovo_inizio.html">Un nuovo inizio!</a></li>-->
+              <li><a href="index.html?ar=articles/06-29-22-Un_nuovo_inizio/06-29-22-Un_nuovo_inizio.html">Un nuovo inizio!</a></li>
+            </ul>
+          </p>
+      </div>
+      <div class="fieldset" id="includedContent" >
+
+      </div>
+
+    </div>
+    <div class="footer">
+       © Tutti i contenuti di questo sito sono Copyright 2022 weeklyvidya.github.io
+    </div>
+  </body>
+</html>
