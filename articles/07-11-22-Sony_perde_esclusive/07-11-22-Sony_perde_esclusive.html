@@ -5,16 +5,29 @@
       <title>Le console Sony stanno perdendo esclusive?</title>
      <style>
        .rainbow {
-  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  color:transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: animatedBackground 5s linear infinite;
-    -moz-animation: animatedBackground 5s linear infinite;
-    -webkit-animation: animatedBackground 5s linear infinite;
-    -ms-animation: animatedBackground 5s linear infinite;
-    -o-animation: animatedBackground 5s linear infinite;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
 }
      </style>
    </head>
@@ -51,7 +64,7 @@
          <br>
       <h3 class="code-line" data-line-start=25 data-line-end=26><a id="Conclusione_25"></a>Conclusione</h3>
       <p class="has-line-data" data-line-start="26" data-line-end="27">E dunque, siamo giunti alla fine di questo mio “articolo opinionistico”. Ammetto che è stato difficile esprimermi e riuscire a contestualizzare il tutto, ma spero di avervi dato qualche spunto di riflessione. Voi cosa ne pensate a riguardo? Fatecelo sapere scrivendo una mail a <a href= "mailto:weekly.vidya@gmail.com">weekly.vidya@gmail.com</a></p>
-      <br><p class="has-line-data" data-line-start="28" data-line-end="29">Scritto da <strong><em >Yurumi</em></strong>, redatto da <strong><em class="rainbow">Vemor</em></strong> e <strong><em class="rainbow">Alastorfi</em></strong></p>
+      <br><p class="has-line-data" data-line-start="28" data-line-end="29">Scritto da <strong><em >Yurumi</em></strong>, redatto da <strong><em class="rainbow rainbow_text_animated">Vemor</em></strong> e <strong><em class="rainbow rainbow_text_animated">Alastorfi</em></strong></p>
       </div> 
    </body>
 </html>
